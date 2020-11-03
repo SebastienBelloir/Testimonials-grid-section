@@ -3,6 +3,7 @@
 }
 
 body {
+    height: 100vh;
     background-color: #EDF2F8;
     font-family: 'Times New Roman', Times, serif;
 }
