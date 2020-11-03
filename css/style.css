@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDF2F8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#grid-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+        "daniel-text daniel-text jonathan-text kira-text"
+        "jeanette-text patrick-text patrick-text kira-text"
+        ". . . .";
+    margin: 5% 15% 5% 15%;
+}
+
+.daniel-text {
+    grid-area: daniel-text;
+    background: url("/images/bg-pattern-quotation.svg") no-repeat;
+    background-position: 85% 1%;
+    background-size: 110px 130px;
+    background-color: #874fcc;
+    border: 1px solid #957CB3;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 35px;
+}
+
+.jonathan-text {
+    grid-area: jonathan-text;
+    background-color: #49556B;
+    border: 1px solid #49556B;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 35px;
+}
+
+.kira-text {
+    grid-area: kira-text;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 35px;
+}
+
+.jeanette-text {
+    grid-area: jeanette-text;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 35px;
+}
+
+.patrick-text {
+    grid-area: patrick-text;
+    background-color: #18202D;
+    border: 1px solid #18202D;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 30px;
+}
+
+#img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.img-name {
+    display: flex;
+}
+
+.img-daniel {
+    border: 3px solid rgba(167, 167, 167, 0.767);
+
+}
+
+.img-patrick {
+    border: 3px solid #8948d8;
+}
+
+.img-jonathan {
+    border: 3px solid #49556B;
+}
+
+.img-white {
+    border: 3px solid white;
+}
+
+.name-white {
+    font-size: 18px;
+    padding-left: 25px;
+    padding-top: 2px;
+    color: white;
+}
+
+.name {
+    font-size: 18px;
+    padding-left: 25px;
+    color: black;
+}
+
+.graduate {
+    font-size: 15px;
+    color: rgb(189, 189, 189);
+}
+
+.white-text {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.grey-text {
+    font-size: 18px;
+    color: rgb(189, 189, 189);
+}
+
+.black-bold-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.black-text {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+    #grid-display {
+        display: flex;
+        flex-direction: column;
+        margin: 2% 5% 2% 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #grid-display {
+        display: flex;
+        flex-direction: column;
+        margin: 2% 5% 2% 5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .daniel-text {
+        background-position: 85% 1%;
+        background-size: 80px 100px;
+        padding: 20px;
+    }
+
+    .jonathan-text {
+        padding: 20px;
+    }
+
+    .jeanette-text {
+        padding: 20px;
+    }
+
+    .patrick-text {
+        padding: 20px;
+    }
+
+    .kira-text {
+        padding: 20px;
+    }
+
+    #img {
+        height: 30px;
+    }
+
+    .name-white {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+
+    .name {
+        font-size: 14px;
+        padding-left: 15px;
+    }
+
+    .white-text {
+        font-size: 18px;
+    }
+
+    .grey-text {
+        font-size: 16px;
+    }
+
+    .graduate {
+        font-size: 13px;
+    }
+
+    .black-bold-text {
+        font-size: 18px;
+    }
+
+    .black-text {
+        font-size: 16px;
+    }
+}
